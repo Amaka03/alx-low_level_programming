@@ -8,37 +8,28 @@
 
 int main(void)
 {
-	int tho;
-	int hun;
-	int ten;
-	int bas;
+	int x, y;
 
-for (tho = 0 ; tho < 10 ; tho++)
-{
-
-	for (hun = 0 ; hun <= 10 ; hun++)
+	for (x = 0; x < 100; x++)
 	{
-		for (ten = 0 ; ten < 10 ; ten++)
+		for (y = 0; y < 100; y++)
 		{
-			for (bas = 0 ; bas < 10 ; bas++)
+			if (x < y)
 			{
-				putchar('0' + tho);
-				putchar('0' + hun);
-				putchar(32);
-				putchar('0' + ten);
-				putchar('0' + bas);
-				if (!(tho == 9 && hun == 8))
+				putchar((x / 10) + 48);
+				putchar((x % 10) + 48);
+				putchar(' ');
+				putchar((y / 10) + 48);
+				putchar((y % 10) + 48);
+				if (x != 98 || y != 99)
 				{
 					putchar(',');
-					putchar(32);
+					putchar(' ');
 				}
-				bas++;
 			}
+
 		}
 	}
-}
 	putchar('\n');
 	return (0);
 }
-
-
