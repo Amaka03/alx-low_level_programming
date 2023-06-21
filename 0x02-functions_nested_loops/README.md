@@ -1,1 +1,1 @@
-read me for 2-print_alphabet_x10.c
+read me for 1-alphabet.c
