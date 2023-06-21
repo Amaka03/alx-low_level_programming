@@ -1,2 +1,1 @@
-Read me for 0x02-functions_nested_loops
-
+Read me for 8-24_hours.c
