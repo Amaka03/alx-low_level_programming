@@ -1,1 +1,1 @@
-read me for 102-fibonacci.c task
+read me for 103-fibonacci.c
