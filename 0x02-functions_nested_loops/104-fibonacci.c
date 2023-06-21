@@ -37,8 +37,8 @@ int main(void)
 	{
 		printf(", %lu", latr1 + latr2 / l);
 		printf("%lu", latr2 % l);
-		lat1 = latr1 + forr1;
-		for1 = latr1 - forr1;
+		latr1 = latr1 + forr1;
+		forr1 = latr1 - forr1;
 		latr2 = latr2 + forr2;
 		forr2 = latr2 - forr2;
 	}
