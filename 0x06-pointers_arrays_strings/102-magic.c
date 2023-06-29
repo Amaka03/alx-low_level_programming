@@ -1,12 +1,14 @@
 #include <stdio.h>
 
 /**
-* write your line of code here...
-* Remember:
-* - you are not allowed to use the variable a
+* main -Entry point
+*
+* Description: you are not allowed to use the variable a
 * - you are not allowed to modify the variable p
 * - only one statement can be written
 * - you are not allowed to code anything else than this line of code
+*
+*   Return: Always 0 (Success)
 */
 
 int main(void)
