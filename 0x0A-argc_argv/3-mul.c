@@ -2,59 +2,57 @@
 #include "main.h"
 
 /**
- * _atoi - that converts a string to an integer
- * @s: string that is to be converted
+ * _atoi - converts a string to an integer
+ * @s: string to be converted
  *
  * Return: the int converted from the string
  */
-
 int _atoi(char *s)
 {
-	int u, v, w, x, y, z;
+	int i, d, n, len, f, digit;
 
-	u = 0;
-	v = 0;
-	w = 0;
-	x = 0;
-	y = 0;
-	z = 0;
+	i = 0;
+	d = 0;
+	n = 0;
+	len = 0;
+	f = 0;
+	digit = 0;
 
-	while (s[x] != '\0')
-		x++;
+	while (s[len] != '\0')
+		len++;
 
-	while (u < x && y == 0)
+	while (i < len && f == 0)
 	{
-		if (s[x] == '-')
-			++v;
+		if (s[i] == '-')
+			++d;
 
-		if (s[u] >= '0' && s[u] <= '9')
+		if (s[i] >= '0' && s[i] <= '9')
 		{
-			z = s[u] - '0';
-			if (v % 2)
-				z = -z;
-			w = w * 10 + z;
-			y = 1;
-			if (s[u + 1] < '0' || s[u + 1] > '9')
+			digit = s[i] - '0';
+			if (d % 2)
+				digit = -digit;
+			n = n * 10 + digit;
+			f = 1;
+			if (s[i + 1] < '0' || s[i + 1] > '9')
 				break;
-			y = 0;
+			f = 0;
 		}
-		u++;
+		i++;
 	}
 
-	if (y == 0)
+	if (f == 0)
 		return (0);
 
-	return (w);
+	return (n);
 }
 
 /**
- * main - that multiplies two numbers
+ * main - multiplies two numbers
  * @argc: number of arguments
  * @argv: array of arguments
  *
  * Return: 0 (Success), 1 (Error)
  */
-
 int main(int argc, char *argv[])
 {
 	int result, num1, num2;
